@@ -7,13 +7,11 @@ const app = express();
 
 // request handlers
 const homepageHandler = function (req, res) {
-  res.status(200);
   res.header('Content-type', 'text/html');
   return res.end('I am on homepage');
 };
 
 const aboutpageHandler = function (req, res) {
-  res.status(200);
   res.header('Content-type', 'text/html');
   return res.end('I am on about page');
 };
