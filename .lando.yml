@@ -1,0 +1,14 @@
+name: lando-node-12
+services:
+  defaults:
+    type: node:12
+    build:
+      - yarn
+    command: /app/node_modules/.bin/nodemon src/app-http.js --watch src --ignore *.test.js
+  custom:
+    type: node:12
+    ssl: true
+    port: 3000
+    build:
+      - yarn
+    command: /app/node_modules/.bin/nodemon src/app-https.js --watch src --ignore *.test.js
