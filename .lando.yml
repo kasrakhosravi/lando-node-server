@@ -1,4 +1,4 @@
-name: lando-node-12
+name: lando-node-server
 services:
   defaults:
     type: node:12
